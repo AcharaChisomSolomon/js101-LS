@@ -20,9 +20,11 @@ function getValidInput(promptMessage) {
   return input;
 }
 
-prompt('Welcome to Mortgage Calculator!');
-
 while (true) {
+  console.clear();
+
+  prompt('Welcome to the Mortgage Calculator!');
+
   let loanAmount = getValidInput("What's the loan amount?");
   let apr = getValidInput("What's the Annual Percentage Rate (APR)? (e.g. 5 for 5%)");
   let loanDuration = getValidInput("What's the loan duration (in years)?");
